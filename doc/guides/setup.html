@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE -- ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: docs/can-guides/experiment/setting-up-canjs.md
+	@page guides/setup
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - Setting Up CanJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="https://stealjs.com/">StealJS</a>
+			<a href="https://jquerypp.com/">jQuery++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="https://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			4.2.0
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v3.canjs.com">3.12.1</a>
+			
+				<a href="https://v2.canjs.com">2.3.33</a>
+			
+		</div>
+	</div>
+</div>
+<div class="search-bar">
+	<div class="search-wrap" style="display:none;">
+		<span class="search-icon"></span>
+		<input
+			type="text"
+			size="6"
+			class="search"
+			placeholder="Search"
+			autocomplete="off"
+			autocorrect="off"
+			autocapitalize="none"
+			spellcheck="false"/>
+			<span class="search-icon-cancel"></span>
+	</div>
+</div>
+
+
+      
+    </div>
+    <div class="bottom">
+      <div class="nav-menu">
+        <div class="social-side-container">
+          <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+        </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../about.html"
+							title="Learn about CanJS’s mission, technical highlights, who uses CanJS, and our future roadmap.">
+							About
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						parent
+           						expanded">
+						<a class="page"
+							href="../guides.html"
+							title="Welcome to CanJS! These guides are here to help you master CanJS development, get involved with the CanJS community,
+and contribute back to CanJS.">
+							Guides
+						</a>
+						
+	<ul>
+		
+			
+				
+					<li>
+						<span>experiment</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="chat.html"
+							title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">
+							Chat Guide
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="todomvc.html"
+							title="This guide will walk you through building a slightly modified version of TodoMVC with CanJS’s Core libraries and can-fixture. It takes about 1 hour to complete.">
+							TodoMVC Guide
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="atm.html"
+							title="This guide will walk you through building and testing an Automated Teller Machine (ATM) application with CanJS’s
+Core libraries.  You’ll learn how to do test driven development (TDD)
+and manage complex state.  It takes about 2 hours to complete.">
+							ATM Guide
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>getting started</span>
+						
+	<ul>
+		
+			
+				
+					<li class="current
+           						
+           						expanded">
+						<a class="page"
+							href="setup.html"
+							title="Get started with CanJS by installing it with npm, using a JS Bin, or just adding it to an HTML page with a &lt;script&gt; tag.">
+							Setting Up CanJS
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="technology-overview.html"
+							title="Learn the basics of the core parts of CanJS&#x27;s technology.">
+							Technology Overview
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="api.html"
+							title="This page walks through how to use and understand CanJS’s API documentation.">
+							Reading the Docs (API Guide)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="advanced-setup.html"
+							title="Use ES modules&#x27; named exports feature to import just the APIs of CanJS that you are using.">
+							Experimental ES Module Usage
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						parent
+           						">
+						<a class="page"
+							href="recipes.html"
+							title="A listing of small examples that are useful for learning CanJS.">
+							recipes
+						</a>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/canvas-clock.html"
+							title="This guide walks you through building a clock with the Canvas API.">
+							Canvas Clock (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/credit-card-advanced.html"
+							title="This guide walks through building a simple credit card payment form with validations. It doesn’t use
+can-define. Instead it uses Kefir.js streams to make a ViewModel.
+can-kefir is used to make the Kefir streams observable to can-stache.">
+							Credit Card Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/credit-card-simple.html"
+							title="This guide walks through building a very simple credit card payment form.  It uses Stripe.js v2 API to create a token
+which can be used to create a charge.  It also performs
+simple validation on the payment form values.">
+							Credit Card Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/cta-bus-map.html"
+							title="This guide walks you through showing Chicago Transit Authority (CTA) bus locations on a Google Map.">
+							CTA Bus Map (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/file-navigator-advanced.html"
+							title="This guide walks you through building a file navigation widget that requests data with fetch. It takes about 45 minutes to complete.">
+							File Navigator Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/file-navigator-simple.html"
+							title="This guide walks you through building a simple file navigation widget.  It takes about 25 minutes to complete.  It was written with
+CanJS 3.10. Check out the file-navigator-advanced
+for an example that makes AJAX requests for its data and uses can-component.">
+							File Navigator Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/playlist-editor.html"
+							title="Learn how to use YouTube’s API to search for videos and make a playlist.  This makes authenticated requests with OAuth2. It uses jQuery++ for
+drag/drop events. It shows using custom attributes and custom events.  This guide takes
+an hour to complete.">
+							Playlist Editor (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/signup-simple.html"
+							title="This guide walks through building simple signup, login forms and a logout button.">
+							Signup and Login (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/text-editor.html"
+							title="This guide walks you through building a basic rich text editor.">
+							Text Editor (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/tinder-carousel.html"
+							title="This guide walks you through building a Tinder-like carousel. Learn how build apps that use dragging user interactions.">
+							Tinder Carousel (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/todomvc-with-steal.html"
+							title="This tutorial walks through building TodoMVC with StealJS. It includes KeyNote presentations
+covering CanJS core libraries.">
+							TodoMVC with StealJS
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/video-player.html"
+							title="This guide walks you through building custom video controls around a video element.">
+							Video Player (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/weather-report-advanced.html"
+							title="This guides you through extending the Simple Weather Report Guide to remove imperative code and automatically look up the user’s location using the
+browser’s geolocation API.  Both of these will be done with event streams.
+This guide continues where the Simple Weather Report Guide left off.  It takes about 25 minutes to complete.  It was written with CanJS 4.1.">
+							Weather Report Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="recipes/weather-report-simple.html"
+							title="This guide walks you through building a simple weather report widget.  It takes about 25 minutes to complete.  It was written with
+CanJS 4.1.">
+							Weather Report Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>topics</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="debugging.html"
+							title="Learn how to debug CanJS applications.">
+							Debugging
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="forms.html"
+							title="Learn how to create amazing &lt;form&gt;s with CanJS.">
+							Forms
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>upgrade</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../migrate-3.html"
+							title="This guide walks you through the step-by-step process to upgrade a 2.x app to CanJS 3.">
+							Migrating to CanJS 3
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../migrate-4.html"
+							title="This guide walks you through the step-by-step process to upgrade a 3.x app to CanJS 4.">
+							Migrating to CanJS 4
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="upgrade/using-codemods.html"
+							title="Learn how to migrate your app to CanJS 3 using can-migrate.">
+							Using Codemods
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../api.html"
+							title="Welcome to the CanJS API documentation! Learn about all the packages that make-up CanJS and how they work together to help you build amazing applications.">
+							API Docs
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../community.html"
+							title="Get involved with one of the most inviting communities on the internet!">
+							Community
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="contribute.html"
+							title="Learn how to contribute to CanJS!">
+							Contributing
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+      </div>
+      <div class="search-results-container">
+	<div class="search-results-wrap"></div>
+</div>
+
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="https://www.bitovi.com/">Bitovi.com</a></li>
+	      		<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+	      		<li><a href="https://www.bitovi.com/design">Design</a></li>
+	      		<li><a href="https://www.bitovi.com/development">Development</a></li>
+	      		<li><a href="https://www.bitovi.com/training">Training</a></li>
+	      		<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+	      		<li><a href="https://www.bitovi.com/about">About</a></li>
+	      		<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-show-count="true">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../../index.html">CanJS</a></li>
+		<li> / </li>
+	
+		<li><a href="../guides.html">Guides</a></li>
+		<li> / </li>
+	
+	
+	<li><a href="setup.html">Setting Up CanJS</a></li>
+	
+	<li class="breadcrumb-dropdown-separator"> / </li>
+	<li class="breadcrumb-dropdown breadcrumb-on-this-page">
+		<a> On this page</a>
+		<ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>Setting Up CanJS</h1>
+			<ul class="title-social">
+				
+				
+				<li>
+					<a class="button-link" href="//github.com/canjs/canjs/edit/master/docs/can-guides/experiment/setting-up-canjs.md">Edit on GitHub</a>
+				</li>
+				
+			</ul>
+	</div>
+	<div class="clear-both"></div>
+	
+  
+	<section class="description">
+    <p>Get started with CanJS by installing it with <a href="https://www.npmjs.com/" title="npm">npm</a>, using a <a href="https://jsbin.com/about" title="JS Bin">JS Bin</a>, or just adding it to an HTML page with a <code>&lt;script&gt;</code> tag.</p>
+
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+	<!--<h2 class="on-this-page-title" data-skip>Page Content</h2>-->
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <p>You can download CanJS from npm or a CDN. We recommend using npm. If you don’t already have Node.js and npm, <a href="https://docs.npmjs.com/getting-started/installing-node">learn how to install both on npm’s website</a>.</p>
+<p>Once downloaded or installed, you can load CanJS in a variety of ways:</p>
+<ul>
+<li><a href="#StealJS">StealJS</a></li>
+<li><a href="#webpack">webpack</a></li>
+<li><a href="#Browserify">Browserify</a></li>
+<li><a href="#Scripttags"><code>&lt;script&gt;</code> tags</a></li>
+</ul>
+<p>This guide shows how to set up common combinations.  If you don’t see yours, please
+ask on the <a href="https://forums.donejs.com/c/canjs">forums</a> or <a href="https://gitter.im/canjs/canjs">Gitter chat</a>.</p>
+<h2>JS Bin</h2>
+<p>Use this JS Bin to play around with CanJS:</p>
+<p><a class="jsbin-embed" href="https://jsbin.com/safigic/28/embed?html,js,output">
+Starter CanJS app on jsbin.com
+</a></p>
+<script src="https://static.jsbin.com/js/embed.min.js?4.1.4"></script>
+<p>It uses <code>can.all.js</code> so you have the <a href="../can-core.html" title="The best, most hardened and generally useful libraries in CanJS.">core</a>, <a href="../can-ecosystem.html" title="Useful libraries that extend or add important features to the core collection.">ecosystem</a>, and <a href="../can-infrastructure.html" title="Utility libraries that power the core and ecosystem collection.">infrastructure</a> modules available to you.</p>
+<h2>npm</h2>
+<blockquote>
+<p>Want to skip setting up a new project locally and just clone a repo? Check out
+our example repos for <a href="https://github.com/canjs/stealjs-example">StealJS</a>,
+<a href="https://github.com/canjs/webpack-example">webpack</a>, and
+<a href="https://github.com/canjs/browserify-example">Browserify</a>.</p>
+</blockquote>
+<p>First, <a href="https://docs.npmjs.com/getting-started/installing-node">go through npm’s guide to installing Node.js and npm</a>.
+If you’re new to development, that page has <a href="https://docs.npmjs.com/getting-started/installing-node#learn-more">additional resources</a>
+for learning about Node.js, npm, using a command-line terminal, and more.</p>
+<p>Next, create a new directory on your computer and navigate to that directory in
+your terminal.</p>
+<p>In your terminal, <a href="https://docs.npmjs.com/cli/init">create a new package.json</a>:</p>
+<pre><code>npm init -y
+</code></pre>
+<p>Next, install <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a> (that’s CanJS’s main package) and
+<a href="https://www.npmjs.com/package/http-server">http-server</a>
+(so you can load the files we create):</p>
+<pre><code>npm install can-component --save
+npm install http-server --save-dev
+</code></pre>
+<p>Next, add a <a href="https://docs.npmjs.com/cli/start">start script</a> to run the
+HTTP server. Add the following line to your <code>package.json</code>:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;my-canjs-app&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;http-server -c-1&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;can-component&quot;: &quot;^4.0.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;http-server&quot;: &quot;^0.11.0&quot;
+  }
+}
+</code></pre>
+<p><span line-highlight='7,only'></span>
+Last, start the HTTP server from your terminal:</p>
+<pre><code>npm start
+</code></pre>
+<p>When the server starts, it’ll tell you the addresses you can open in your
+browser to see your project. They will be similar to <a href="http://localhost:8080/" title="http://localhost:8080/">http://localhost:8080/</a>.</p>
+<p>Next, you can choose to use <a href="#StealJS">StealJS</a>, <a href="#webpack">webpack</a>, or
+<a href="#Browserify">Browserify</a> to load your project.</p>
+<h3>StealJS</h3>
+<blockquote>
+<p>You can skip these instructions by
+<a href="https://github.com/canjs/stealjs-example">cloning this example repo on GitHub</a>.</p>
+</blockquote>
+<p>Install <a href="https://stealjs.com">StealJS</a> and the <a href="../steal-stache.html" title="A StealJS extension that allows stache templates as dependencies.">steal-stache</a> plugin from npm:</p>
+<pre><code>npm install steal steal-stache --save
+</code></pre>
+<p>Next, add the following <a href="https://stealjs.com/docs/StealJS.configuration.html">steal configuration</a>
+to your <code>package.json</code>:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;my-canjs-app&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;http-server -c-1&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;steal&quot;: {
+    &quot;plugins&quot;: [&quot;steal-stache&quot;]
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;can-component&quot;: &quot;^4.0.0&quot;,
+    &quot;steal&quot;: &quot;^1.11.0&quot;,
+    &quot;steal-stache&quot;: &quot;^4.1.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;http-server&quot;: &quot;^0.11.0&quot;
+  }
+}
+</code></pre>
+<p><span line-highlight='10-12,only'></span>
+Next, create an <code>app.stache</code> template for your app:</p>
+<pre><code class="language-html">{{! app.stache }}
+&lt;h1&gt;{{message}}&lt;/h1&gt;
+</code></pre>
+<p>Next, create an <code>index.js</code> module for your application. Import <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a> and
+your template to say “Hello World”:</p>
+<pre><code class="language-js">// index.js
+import Component from &quot;can-component&quot;;
+import template from &quot;./app.stache&quot;;
+
+Component.extend({
+  tag: &quot;my-app&quot;,
+  view: template,
+  ViewModel: {
+    message: {
+      default: &quot;Hello World&quot;
+    }
+  }
+});
+</code></pre>
+<p>Finally, create an <code>index.html</code> page that loads <code>steal.js</code> and includes your
+<code>&lt;my-app&gt;</code> component:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;CanJS and StealJS&lt;/title&gt;
+&lt;script src=&quot;./node_modules/steal/steal.js&quot;&gt;&lt;/script&gt;
+&lt;my-app&gt;&lt;/my-app&gt;
+</code></pre>
+<p><span line-highlight='3-4'></span>
+Now you can load that page in your browser at one of the addresses the HTTP
+server showed you earlier (something like <a href="http://localhost:8080/" title="http://localhost:8080/">http://localhost:8080/</a>). You should
+see “Hello World” on the page—if you don’t, join our
+<a href="https://gitter.im/canjs/canjs">Gitter chat</a> and we can help you figure out what
+went wrong.</p>
+<p>Ready to build an app with CanJS? Check out our <a href="chat.html" title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">Chat Guide</a> or one of our
+<a href="recipes.html" title="A listing of small examples that are useful for learning CanJS.">recipes</a>!</p>
+<h3>webpack</h3>
+<blockquote>
+<p>You can skip these instructions by
+<a href="https://github.com/canjs/webpack-example">cloning this example repo on GitHub</a>.</p>
+</blockquote>
+<p>First, install <a href="https://webpack.js.org">webpack</a>
+(with <a href="https://www.npmjs.com/package/raw-loader">raw-loader</a>) from npm:</p>
+<pre><code>npm install webpack webpack-cli raw-loader --save-dev
+</code></pre>
+<p>Next, create an <code>app.stache</code> template for your app:</p>
+<pre><code class="language-html">{{! app.stache }}
+&lt;h1&gt;{{message}}&lt;/h1&gt;
+</code></pre>
+<p>Next, create an <code>index.js</code> module for your application. Import <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a>
+and your template to say “Hello World”:</p>
+<pre><code class="language-js">// index.js
+import Component from &quot;can-component&quot;;
+import template from &quot;raw-loader!./app.stache&quot;;
+
+Component.extend({
+  tag: &quot;my-app&quot;,
+  view: template,
+  ViewModel: {
+    message: {
+      default: &quot;Hello World&quot;
+    }
+  }
+});
+</code></pre>
+<p>Next, run webpack from your terminal:</p>
+<pre><code>./node_modules/webpack/bin/webpack.js -d index.js -o dist/bundle.js
+</code></pre>
+<p>Finally, create an <code>index.html</code> page that loads <code>dist/bundle.js</code> and includes
+your <code>&lt;my-app&gt;</code> component:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;CanJS and webpack&lt;/title&gt;
+&lt;script src=&quot;./dist/bundle.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;my-app&gt;&lt;/my-app&gt;
+</code></pre>
+<p><span line-highlight='3-4'></span>
+Now you can load that page in your browser at one of the addresses the HTTP
+server showed you earlier (something like <a href="http://localhost:8080/" title="http://localhost:8080/">http://localhost:8080/</a>). You should
+see “Hello World” on the page—if you don’t, join our
+<a href="https://gitter.im/canjs/canjs">Gitter chat</a> and we can help you figure out what
+went wrong.</p>
+<p>Ready to build an app with CanJS? Check out our <a href="chat.html" title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">Chat Guide</a> or one of our
+<a href="recipes.html" title="A listing of small examples that are useful for learning CanJS.">recipes</a>!</p>
+<blockquote>
+<p>The instructions above show using <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a>. As of <a href="https://github.com/canjs/canjs/releases/tag/v4.2.0">can@4.2</a>,
+you can use the <code>can</code> package with <a href="https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking">tree shaking</a>
+to <code>import {Component} from &quot;can&quot;</code>. See the <a href="advanced-setup.html" title="Use ES modules' named exports feature to import just the APIs of CanJS that you are using.">experimental guide</a>
+for more information.</p>
+</blockquote>
+<h3>Browserify</h3>
+<blockquote>
+<p>You can skip these instructions by
+<a href="https://github.com/canjs/browserify-example">cloning this example repo on GitHub</a>.</p>
+</blockquote>
+<p>CanJS works with <a href="http://browserify.org">Browserify</a>. Install <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a>
+and Browserify (with various plugins) from npm:</p>
+<pre><code>npm install browserify stringify babelify babel-core babel-preset-env --save-dev
+</code></pre>
+<p>By default, Browserify works with CommonJS modules (with <code>require()</code> statements).
+To use it with ES6 modules (with <code>import</code> statements), configure the
+<a href="https://www.npmjs.com/package/babelify">babelify</a> plugin in your <code>package.json</code>.
+We’ll also include the <a href="https://www.npmjs.com/package/stringify">stringify</a>
+configuration for loading <a href="../can-stache.html" title="Live binding Mustache and Handlebars-compatible templates.">can-stache</a> templates:</p>
+<pre><code>{
+  &quot;name&quot;: &quot;my-canjs-app&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;http-server -c-1&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;browserify&quot;: {
+    &quot;transform&quot;: [ [ &quot;babelify&quot;, { &quot;presets&quot;: [&quot;env&quot;] } ] ]
+  },
+  &quot;stringify&quot;: {
+    &quot;appliesTo&quot;: { &quot;includeExtensions&quot;: [&quot;.stache&quot;] }
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;can-component&quot;: &quot;^4.0.0&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;babel-core&quot;: &quot;^6.26.0&quot;,
+    &quot;babel-preset-env&quot;: &quot;^1.6.0&quot;,
+    &quot;babelify&quot;: &quot;^8.0.0&quot;,
+    &quot;browserify&quot;: &quot;^16.1.0&quot;,
+    &quot;http-server&quot;: &quot;^0.11.0&quot;,
+    &quot;stringify&quot;: &quot;^5.2.0&quot;
+  }
+}
+</code></pre>
+<p><span line-highlight='10-15,only'></span>
+Next, create an <code>app.stache</code> template for your app:</p>
+<pre><code class="language-html">{{! app.stache }}
+&lt;h1&gt;{{message}}&lt;/h1&gt;
+</code></pre>
+<p>Next, create an <code>index.js</code> module for your application. Import <a href="../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a>
+and your template to say “Hello World”:</p>
+<pre><code class="language-js">// index.js
+import Component from &quot;can-component&quot;;
+import template from &quot;./app.stache&quot;;
+
+Component.extend({
+  tag: &quot;my-app&quot;,
+  view: template,
+  ViewModel: {
+    message: {
+      default: &quot;Hello World&quot;
+    }
+  }
+});
+</code></pre>
+<p>Next, run Browserify from your terminal:</p>
+<pre><code>./node_modules/browserify/bin/cmd.js --debug --transform babelify --transform stringify --entry index.js --outfile dist/bundle.js
+</code></pre>
+<p>Finally, create an <code>index.html</code> page that loads <code>dist/bundle.js</code> and includes
+your <code>&lt;my-app&gt;</code> component:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;CanJS and Browserify&lt;/title&gt;
+&lt;script src=&quot;./dist/bundle.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;my-app&gt;&lt;/my-app&gt;
+</code></pre>
+<p><span line-highlight='3-4'></span>
+Now you can load that page in your browser at one of the addresses the HTTP
+server showed you earlier (something like <a href="http://localhost:8080/" title="http://localhost:8080/">http://localhost:8080/</a>). You should
+see “Hello World” on the page—if you don’t, join our
+<a href="https://gitter.im/canjs/canjs">Gitter chat</a> and we can help you figure out what
+went wrong.</p>
+<p>Ready to build an app with CanJS? Check out our <a href="chat.html" title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">Chat Guide</a> or one of our
+<a href="recipes.html" title="A listing of small examples that are useful for learning CanJS.">recipes</a>!</p>
+<h2>Script tags</h2>
+<h3>npm</h3>
+<p>After following the <a href="#npm">npm instructions above</a>, install the
+<a href="https://www.npmjs.com/package/can">can</a> package from npm:</p>
+<pre><code>npm install can --save
+</code></pre>
+<p>The <code>node_modules/can/dist/global/</code> directory will include two files:</p>
+<ul>
+<li><code>can.all.js</code>: includes the <a href="../can-core.html" title="The best, most hardened and generally useful libraries in CanJS.">core</a>, <a href="../can-ecosystem.html" title="Useful libraries that extend or add important features to the core collection.">ecosystem</a>, and <a href="../can-infrastructure.html" title="Utility libraries that power the core and ecosystem collection.">infrastructure</a> modules</li>
+<li><code>can.js</code>: includes the <a href="../can-core.html" title="The best, most hardened and generally useful libraries in CanJS.">core</a> and <a href="../can-infrastructure.html" title="Utility libraries that power the core and ecosystem collection.">infrastructure</a> modules</li>
+</ul>
+<p>With <code>can</code> installed, use it to create an <code>index.html</code> page with a <code>&lt;script&gt;</code> tag:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;My CanJS App&lt;/title&gt;
+&lt;script src=&quot;./node_modules/can/dist/global/can.all.js&quot;&gt;&lt;/script&gt;
+
+&lt;my-app&gt;&lt;/my-app&gt;
+
+&lt;script type=&quot;text/stache&quot; id=&quot;app-template&quot;&gt;
+  &lt;h1&gt;{{message}}&lt;/h1&gt;
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  const template = can.stache.from(&quot;app-template&quot;);
+
+  can.Component.extend({
+    tag: &quot;my-app&quot;,
+    view: template,
+    ViewModel: {
+      message: {
+        default: &quot;Hello World&quot;
+      }
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+<p><span line-highlight='3'></span></p>
+<h3>CDN</h3>
+<p>Another quick way to start locally is by loading CanJS from a CDN:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;My CanJS App&lt;/title&gt;
+&lt;script src=&quot;https://unpkg.com/can@4/dist/global/can.all.js&quot;&gt;&lt;/script&gt;
+
+&lt;my-app&gt;&lt;/my-app&gt;
+
+&lt;script type=&quot;text/stache&quot; id=&quot;app-template&quot;&gt;
+  &lt;h1&gt;{{message}}&lt;/h1&gt;
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  const template = can.stache.from(&quot;app-template&quot;);
+
+  can.Component.extend({
+    tag: &quot;my-app&quot;,
+    view: template,
+    ViewModel: {
+      message: {
+        default: &quot;Hello World&quot;
+      }
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+<p><span line-highlight='3'></span>
+Ready to build an app with CanJS? Check out our <a href="chat.html" title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">Chat Guide</a> or one of our
+<a href="recipes.html" title="A listing of small examples that are useful for learning CanJS.">recipes</a>!</p>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  window.docObject = {"src":{"path":"docs/can-guides/experiment/setting-up-canjs.md"},"description":"Get started with CanJS by installing it with [https://www.npmjs.com/ npm], using a [https://jsbin.com/about JS Bin], or just adding it to an HTML page with a `<script>` tag. \n","name":"guides/setup","title":"Setting Up CanJS","type":"page","parent":"guides/getting-started","order":1,"outline":"2","comment":" ","pathToRoot":"../.."};
+</script>
+</article>
+      
+        <footer><p>CanJS is part of <a href="https://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#team" target="_blank">DoneJS team</a> and <a href="https://www.bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 4.2.0.</strong></p>
+</footer>
+      
+    </div>
+  </div>
+</div>
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve CanJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../static/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- root-level elements with attributes necessary for the app -->
+		<div path-prefix=".."></div>
+
+	</body>
+</html>
